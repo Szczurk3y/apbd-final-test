@@ -6,7 +6,6 @@ using s24196_apbd_final.Services;
 namespace s24196_apbd_final.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
 public class CustomersController : ControllerBase
 {
     private readonly IDbService _dbService;
@@ -16,7 +15,7 @@ public class CustomersController : ControllerBase
         _dbService = dbService;
     }
 
-    [HttpGet("{id:int}/purchases")]
+    [HttpGet("api/[controller]/{id:int}/purchases")]
     public async Task<IActionResult> GetAsync(int id)
     {
         Console.WriteLine("Purchases");
@@ -31,7 +30,7 @@ public class CustomersController : ControllerBase
         }
     }
 
-    [HttpPost]
+    [HttpPost("[controller]")]
     public async Task<IActionResult> Create([FromBody] AddClientDto clientDto)
     {
         try
@@ -41,8 +40,7 @@ public class CustomersController : ControllerBase
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
-            throw;
+            return NotFound(e.Message);
         }
     }
 

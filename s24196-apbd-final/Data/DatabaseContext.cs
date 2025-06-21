@@ -37,7 +37,7 @@ public class DatabaseContext : DbContext
         
         modelBuilder.Entity<Concert>().HasData(new List<Concert>()
         {
-            new() { ConcertId = 1, Name = "Orange Warsaw Festival", Date = DateTime.Parse("2025-01-01"), AvailableTickets = 12000 },
+            new() { ConcertId = 1, Name = "Concert 1", Date = DateTime.Parse("2025-01-01"), AvailableTickets = 12000 },
             new() { ConcertId = 2, Name = "Opener", Date = DateTime.Parse("2025-03-12"), AvailableTickets = 15000 },
             new() { ConcertId = 3, Name = "SBM", Date = DateTime.Parse("2025-06-05"), AvailableTickets = 10000 }
         });

@@ -4,6 +4,6 @@ public class PurchasedTicketDto
 {
     public required DateTime Date { get; set; }
     public required double Price { get; set; }
-    public required TicketDto TicketDto { get; set; }
-    public required ConcertDto ConcertDto { get; set; }
+    public required TicketDto Ticket { get; set; }
+    public required ConcertDto Concert { get; set; }
 }
