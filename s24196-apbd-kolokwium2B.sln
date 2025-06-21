@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "s24196-apbd-final", "s24196-apbd-final\s24196-apbd-final.csproj", "{3ADA82E2-4AAA-4E72-A871-42A3623582E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "s24196-apbd-kolokwium2B", "s24196-apbd-kolokwium2B\s24196-apbd-kolokwium2B.csproj", "{3ADA82E2-4AAA-4E72-A871-42A3623582E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
